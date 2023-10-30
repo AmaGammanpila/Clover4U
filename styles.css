@@ -1,0 +1,335 @@
+body{
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-image: url("Images/tropical-green-leaves-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+
+.hero{
+  padding: 5%;
+  align-items: center;
+}
+.glass{
+  border-radius: 50px;
+  border: 2px solid rgba(255, 255, 255, 0.42);
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(13.5px);
+}
+
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  font-size: 18px;
+}
+
+.logo{
+  margin-left: 5%;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.logo_header{
+  display: flex;
+  margin-left: 2%;
+}
+
+.main_nav{
+  display: flex;
+  width: 40%;
+  float: right;
+  margin-right: 2%;
+  justify-content: space-between;
+  list-style: none;
+  padding-right: 15px;
+}
+
+.main_nav li:hover{
+  background-color: white;
+  padding: 5px;
+  border-radius: 15px;
+  box-shadow: 8px 12px 5px 0px rgba(0, 0, 0, 0.25);
+}
+
+.main_nav li:hover a{ 
+  color: #182619;
+  padding: 5px;
+
+}
+
+.main_nav li{
+  display: inline;
+  color: #000;
+}
+.main_nav li a{
+  color:white;
+  text-decoration: none;
+}
+
+
+.navbar_toggle{
+  display: none;
+}
+
+.hero-text{
+  width: 60%;
+  flex-shrink: 0;
+  color: #FFF;
+  font-size: 150%;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding-left: 35px;
+}
+.sub-text{
+  width: 50%;
+  flex-shrink: 0;
+  color: #FFF;
+  font-size: 100%;
+  font-weight: 400;
+  line-height: normal;
+  padding-left: 35px;
+}
+
+.button{
+  width: 100px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: #FFF;
+  box-shadow: 8px 12px 5px 0px rgba(0, 0, 0, 0.25);
+}
+.cta{
+  padding-left: 35px;
+}
+
+ul li{
+  list-style: none;
+}
+
+.about{
+  width: 100%;
+  flex-shrink: 0;
+  color: #FFF;
+  font-size: 150%;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-align: center;
+}
+
+.aboutphara{
+  width: 98%;
+  flex-shrink: 0;
+  color: #FFF;
+  font-size: 100%;
+  font-weight: 300;
+  line-height: normal;
+  text-align: center;
+  padding-left: 10px;
+}
+li{
+  list-style: none;
+
+}
+
+@media only screen and (max-width : 992px){
+
+  .navbar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100vw;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-size: 20px;
+  }
+
+  .main_nav{
+    display: none;
+  }
+
+  .show_nav{
+    padding-top: 2%;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .main_nav li{
+    width: 70%;
+    height: 50px;
+    font-size: 20px;
+    justify-content: center;
+    text-align: center;
+    padding: 5%;
+  }
+  .navbar_toggle {
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 30px;
+    color: #fff;
+    background: transparent;
+    border-color: transparent;
+    transition: all 0.3s linear;
+    cursor: pointer;
+    display: block;
+  }
+  .logo_header{
+    width: 80%;
+    justify-content: space-between;
+    margin-right: 2%;
+  }
+  
+} 
+
+
+.product-row{
+  display: flex;
+}
+
+.product-card{
+  width: 30%;
+  height:auto;
+  border-radius: 50px;
+  border: 2px solid rgba(255, 252, 252, 0.40);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  background: rgba(255, 255, 255, 0.15);
+  flex-shrink: 0;
+  backdrop-filter: blur(15px);
+  margin-top: 5%;
+  margin-right: 3%;
+}
+
+.product-img{
+width: 80%;
+height: auto;
+border-radius: 25px;
+box-shadow: 14px 15px 4px 0px rgba(0, 0, 0, 0.25);
+background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+flex-shrink: 0;
+margin-left: 10% ;
+margin-top: 10%;
+margin-bottom: 2%;
+}
+
+.product-name{
+  width: 90%;
+  height: auto;
+  flex-shrink: 0;
+  color: #FFF;
+  font-family: Inter;
+  font-size: 150%;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-left: 12%;
+}
+
+.product-price{
+  width:100%;
+  height: auto;
+  flex-shrink: 0;
+  color: #FFF;
+  font-family: Inter;
+  font-size: 120%;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-left: 35%;
+}
+
+.button2{
+    width: 40%;
+    height: 30px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 8px 12px 5px 0px rgba(0, 0, 0, 0.25);
+    margin-left: 25%;
+    margin-bottom: 10%;
+  }
+
+
+
+  .title{
+    color: #FFF;
+  }
+
+
+  input[type=text], select, textarea {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #efefef; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical;
+    
+  }
+
+
+  input[type=submit] {
+    background-color: #fff;
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 8px 12px 5px 0px rgba(0, 0, 0, 0.25);
+  }
+  
+  
+  
+  
+  
+  .container {
+    border-radius: 5px;
+    padding: 20px;
+  }
+
+
+
+
+
+.footer-basic {
+  padding:40px 0;
+  color:#fff;
+}
+
+
+.footer-basic .social {
+  text-align:center;
+  padding-bottom:20px;
+}
+
+.footer-basic .social > a {
+  font-size:24px;
+  width:40px;
+  height:40px;
+  line-height:40px;
+  display:inline-block;
+  text-align:center;
+  margin:0 10px;
+  color:inherit;
+  
+}
+
+.footer-basic .social > a:hover {
+  
+  color: #182619;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: all 0.5s ease;
+}
